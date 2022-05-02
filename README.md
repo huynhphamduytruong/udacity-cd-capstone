@@ -55,7 +55,7 @@ git clone https://github.com/huynhphamduytruong/udacity-cd-capstone
 
 - Change working directory to backend e.g. `cd .\backend\`
 - Install the dependencies for each project `npm install`
-- Update environment variables in `serverless.yml` with your values
+- Update Serverless app info & environment variables in `serverless.yml` with your values
 - Deploy to Serverless by running:
 ```
 serverless deploy -v
