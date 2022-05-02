@@ -9,12 +9,15 @@ import { JwtPayload } from '../../auth/JwtPayload'
 
 import { JwksClient } from 'jwks-rsa'
 
+const auth0Username = process.env.AUTH0_USERNAME;
+const auth0Region = process.env.AUTH0_REGION;
+
 const logger = createLogger('auth')
 
 // Provide a URL that can be used to download a certificate that can be used
 // to verify JWT token signature.
 // To get this URL you need to go to an Auth0 page -> Show Advanced Settings -> Endpoints -> JSON Web Key Set
-const jwksUrl = 'https://huynhphamduytruong.us.auth0.com/.well-known/jwks.json'
+const jwksUrl = `https://${auth0Username}.${auth0Region}.auth0.com/.well-known/jwks.json`
 
 const jwksClient = new JwksClient({
   jwksUri: jwksUrl,

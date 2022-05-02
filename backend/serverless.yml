@@ -26,6 +26,8 @@ provider:
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
     ATTACHMENTS_S3_BUCKET: truonghpd-serverless-todo-images-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
+    AUTH0_USERNAME: huynhphamduytruong
+    AUTH0_REGION: us
 
   logs:
     # Enable API Gateway logs
